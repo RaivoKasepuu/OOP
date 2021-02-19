@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A7 {
+public class A7_konsoolilt {
 
 /*
 Ülesanne A7 (kontroll) --> P7 (kontroll)
@@ -17,7 +17,7 @@ murelahendajalt. Püütud on tüüpilisemaid probleemseid kohti selgitada ja and
 
 
     public static void main(String[] args) {
-        System.out.println("A7");
+        System.out.println("A7 konsoolilt");
 
         Scanner input = new Scanner(System.in);
         System.out.println("Sisesta eesnimi: ");
@@ -27,8 +27,8 @@ murelahendajalt. Püütud on tüüpilisemaid probleemseid kohti selgitada ja and
         System.out.println("Sisesta pikkus (meetrites): ");
         String pikkus = input.nextLine();
 
-        double BMI = 1.3 * Double.parseDouble(kehakaal) / Double.parseDouble(pikkus);
-        System.out.println("Simu kehamassiindeks on: " + BMI);
+        double BMI = Double.parseDouble(kehakaal)/Math.pow(Double.parseDouble(pikkus), 2);
+        System.out.println(nimi + ", Simu kehamassiindeks on: " + BMI);
         if (BMI < 18.5) {
             System.out.println("alakaal!");
 

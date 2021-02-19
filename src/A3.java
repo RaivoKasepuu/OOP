@@ -18,7 +18,7 @@ Palun kirjutage paberile/dokumenti, mis meetoditega tutvusite ja mida teeb teile
         System.out.println("Kui suurema täringuviske tulemus oleks ringi raadius, siis ringi pindala oleks: " + ringiPindala(Math.max(täringuvise, täringuvise2)));
         System.out.println("Teeme visete põhjal ruutvõttandi: ( x - " + täringuvise + " ) * ( x - " + täringuvise2 + " ) = 0");
         System.out.println("sulge läbikorrutades saame : x2 - " + (täringuvise + täringuvise2) + "x + " + (täringuvise * täringuvise2) + " = 0" );
-        System.out.println("ja kontrolliks lahendame selle ruutvõttandi.");
+        System.out.println("ja kontrolliks lahendame selle ruutvõrrandi:");
         System.out.println("Lahendid esitame järjendis: " + ruutVõrrand(1, täringuvise + täringuvise2, täringuvise * täringuvise2));
     }
 

@@ -83,6 +83,10 @@ murelahendajalt. Püütud on tüüpilisemaid probleemseid kohti selgitada ja and
         System.out.println("Harmooniline keskmine, keskmised: " + harmoonilineKeskmine(keskmised));
         System.out.println("Harmooniline keskmine, suured: " + harmoonilineKeskmine(suured));
 
+        System.out.println("----------------------------------------------------");
+
+        System.out.println("Harmooniline keskmise definitsioon: https://et.wikipedia.org/wiki/Harmooniline_keskmine");
+
     }
 
     /*
@@ -123,3 +127,4 @@ keskmiste laste jaoks ja 20-liikmeline massiiv suuremate laste jaoks.
         return sisend.length / summa;
     }
 }
+

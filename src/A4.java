@@ -19,19 +19,25 @@ murelahendajalt. Püütud on tüüpilisemaid probleemseid kohti selgitada ja and
 
     public static void main(String[] args) {
         System.out.println("Ülesanne A4");
-        System.out.println(summa(1, 2));
-        System.out.println(ümardatudRuut(7.5));
-
+        System.out.println(meetod(1, 2));
+        System.out.println(meetod(7.5));
+        meetod(3, "meetod");
 
     }
 
-    public static int summa (int a, int b) {
+    public static int meetod(int a, int b) {
         return a + b;
     }
 
-    public static double ümardatudRuut (double a) {
+    public static double meetod(double a) {
+        return Math.round(a * a);
+    }
 
-        return Math.round(a * a );
+    public static void meetod(int a, String sõne) {
+        for (int i = 0; i < a; i++) {
+            System.out.println(sõne);
+        }
+
     }
 
 }
