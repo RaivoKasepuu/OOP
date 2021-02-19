@@ -115,14 +115,11 @@ tagastustüüp peaks olema int[].
     Viimast meetodit peameetodis rakendades luua 10-liikmeline massiiv väiksemate laste jaoks, 15-liikmeline massiiv
 keskmiste laste jaoks ja 20-liikmeline massiiv suuremate laste jaoks.
      */
-
     public static double harmoonilineKeskmine(int[] sisend) {
         double summa = 0;
         double jagatis;
         for (int i = 0; i < sisend.length; i++) {
-
             summa += 1 / (double) sisend[i];
-
         }
         return sisend.length / summa;
     }
