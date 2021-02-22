@@ -85,7 +85,7 @@ murelahendajalt. Püütud on tüüpilisemaid probleemseid kohti selgitada ja and
 
         System.out.println("----------------------------------------------------");
 
-        System.out.println("Harmooniline keskmise definitsioon: https://et.wikipedia.org/wiki/Harmooniline_keskmine");
+        System.out.println("Harmoonilise keskmise definitsioon: https://et.wikipedia.org/wiki/Harmooniline_keskmine");
 
     }
 
@@ -117,7 +117,6 @@ keskmiste laste jaoks ja 20-liikmeline massiiv suuremate laste jaoks.
      */
     public static double harmoonilineKeskmine(int[] sisend) {
         double summa = 0;
-        double jagatis;
         for (int i = 0; i < sisend.length; i++) {
             summa += 1 / (double) sisend[i];
         }
