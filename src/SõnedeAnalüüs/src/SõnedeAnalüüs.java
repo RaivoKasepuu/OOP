@@ -1,8 +1,7 @@
 public class SõnedeAnalüüs {
 
     public static void main(String[] args) {
-        String space = "";
-        String word = null;
+
         String lause = "Ekraanile peab väljastatama alglause ning sõnad ja nende pikkused";
         System.out.println("Alglause on:");
         System.out.println(lause);
