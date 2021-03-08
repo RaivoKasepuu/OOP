@@ -2,7 +2,10 @@ public class TestRaamat {
 
     public static void main(String[] args) {
 
-        Raamat kevade = new Raamat("Oskar Luts", "Kevade");
+     Isik onuOskar = new Isik("Oskar Luts", 166, 66, 220 );
+        Isik onuAnton = new Isik("Anton Hansen Tammsaare", 177, 77, 260 );
+
+        Raamat kevade = new Raamat(onuOskar , "Kevade");
         Raamat[] riiul = new Raamat[100];
         System.out.println(riiul[8]);
         riiul[8] = kevade;
@@ -10,7 +13,7 @@ public class TestRaamat {
         String autor = "Eduard Vilde";
 
         for (int i = 0; i < riiul.length; i++) {
-            riiul[i] = new Raamat(autor, "Kogutud teosed " + String.valueOf(i + 1));
+            riiul[i] = new Raamat(onuAnton, "Kogutud teosed " + String.valueOf(i + 1));
         }
 
         System.out.println("4. raamat riiulil on " + riiul[3] + ".");

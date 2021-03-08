@@ -1,10 +1,10 @@
 public class Raamat {
 
-    private String autor;
+    private Isik autor;
     private String pealkiri;
 
 
-    public Raamat(String autor, String pealkiri) {
+    public Raamat(Isik autor, String pealkiri) {
         this.autor = autor;
         this.pealkiri = pealkiri;
     }
@@ -12,7 +12,7 @@ public class Raamat {
     @Override
     public String toString() {
         return "Raamat{" +
-                "autor='" + autor + '\'' +
+                "autor=" + autor +
                 ", pealkiri='" + pealkiri + '\'' +
                 '}';
     }
