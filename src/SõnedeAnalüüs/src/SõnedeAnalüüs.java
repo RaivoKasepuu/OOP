@@ -1,4 +1,4 @@
-public class SõnedeAnalüüs {
+public class SõnadeAnalüüs {
 
     public static void main(String[] args) {
 
