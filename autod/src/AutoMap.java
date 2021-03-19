@@ -9,6 +9,7 @@ class AutoMap implements Serializable {
 
     }
 
+
     @Override
     public String toString() {
         return "AutoMap{" +
