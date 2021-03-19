@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class Auto  {
+public class Auto implements Serializable  {
     private String vin;
     private String mark;
     private String model;

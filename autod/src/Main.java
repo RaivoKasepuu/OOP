@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-//        AutoMap autoMap = FileOperations.readFromFile();
-  //      System.out.println(autoMap.getKeys());
+        AutoMap autoMap = FileOperations.readFromFile();
+        System.out.println(autoMap.getKeys());
 
-        AutoMap autoMap = new AutoMap();
+        //AutoMap autoMap = new AutoMap();
         Auto auto1 = new Auto("123", "dddd", "fffff");
 
         autoMap.addAuto(autoMap.getNextKey(), auto1);
@@ -23,10 +23,14 @@ public class Main {
         Auto auto6 = new Auto("623", "dddd", "fffff");
         autoMap.addAuto(auto6);
 
+        Auto auto7 = new Auto("eeeee", "Kia", "Muna");
+        autoMap.addAuto(auto7);
+
+
         System.out.println(autoMap);
         //String autoString = autoMap.toString();
 
-        //FileOperations.writeToFile(autoMap);
+        FileOperations.writeToFile(autoMap);
 
         System.out.println(autoMap.getKeys());
         System.out.println(autoMap.getNextKey());
@@ -39,9 +43,15 @@ public class Main {
         System.out.println(autoMap.getAuto(4));
 
         System.out.println(autoMap.getAutoMap());
-        //AutoMap autoMap2 = FileOperations.readFromFile();
+        AutoMap autoMap2 = FileOperations.readFromFile();
 
-        System.out.println(autoMap);
+        System.out.println(autoMap2);
+        System.out.println(autoMap2.getKeys());
+
+
+        System.out.println(autoMap.getAuto(7));
+        autoMap.getAuto(4).setMark("Volvo");
+        System.out.println(autoMap.getAuto(4));
 
 
     }
