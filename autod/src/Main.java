@@ -4,14 +4,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
+        // AutoMap autoMap = new AutoMap();
 
         // Loeme failist viimase salvestatud autoMap-i  sisu
-        //AutoMap autoMap = FileOperations.readFromFile();
+        AutoMap autoMap = FileOperations.readFromFile();
+
         // Trükime, mis võtmed on kasutusel (ehk mis autode ID-d)
         //System.out.println(autoMap.getKeys());
-
-        AutoMap autoMap = new AutoMap(); // Seda pole enam vaja, kui autod.txt olemas
-
         // Loome auto
         Auto auto1 = new Auto("123", "dddd", "fffff");
         // Lisame selle auto autoMap-i. Autode ID genereeritakse automaatselt incement by one.

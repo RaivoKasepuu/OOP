@@ -25,9 +25,6 @@ class AutoMap implements Serializable {
         this.autoMap = autoMap;
     }
 
-    // Creating an empty HashMap
-
-
     public AutoMap(HashMap<Integer, Auto> autoMap) {
         this.autoMap = autoMap;
     }
