@@ -1,6 +1,8 @@
+import java.util.Comparator;
+
 public class Lapsehoidja {
 
-    int firmaNumber;
+    Integer firmaNumber;
     String nimi;
 
     public Lapsehoidja(int firmaNumber, String nimi) {
@@ -31,4 +33,7 @@ public class Lapsehoidja {
     public void setNimi(String nimi) {
         this.nimi = nimi;
     }
+
+
+
 }
