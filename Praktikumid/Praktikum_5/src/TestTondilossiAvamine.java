@@ -1,4 +1,4 @@
-public class Test {
+public class TestTondilossiAvamine {
     public static void main(String[] args) {
         AmeerikaMäed mäed = new AmeerikaMäed();
         Dokument[] dokumendid = {
@@ -12,10 +12,10 @@ public class Test {
         //System.out.println("sobib: " + mäed.vanusedSobivad(dokumendid));
         //System.out.println("sobimatud: " + mäed.ebasobivadDokumendid(dokumendid));
 
-        Atraktsioon lõbumaja = new Atraktsioon("lõbumaja", 14);
+        Atraktsioon tondiloss = new Atraktsioon("lõbumaja", 14);
         Atraktsioon striptiis = new Atraktsioon("striptiis", 12);
 
-        System.out.println("Lõbumajja sisenemiseks ebasobivad dokumendid on järgmised: "+ lõbumaja.ebasobivadDokumendid(dokumendid));
+        System.out.println("Tondilossi sisenemiseks ebasobivad dokumendid on järgmised: "+ tondiloss.ebasobivadDokumendid(dokumendid));
         System.out.println("Striptiisietendusele sisenemiseks ebasobivad dokumendid on järgmised: " + striptiis.ebasobivadDokumendid(dokumendid));
 
 

@@ -1,3 +1,5 @@
+package Pank;
+
 public class TestPank {
 
     public static void main(String[] args) {

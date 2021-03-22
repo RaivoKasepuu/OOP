@@ -1,4 +1,4 @@
-public class Külastaja implements Comparable {
+public class Külastaja implements Comparable<Külastaja> {
 
     private String nimi;
     private int atraktsioonideArv;
@@ -32,13 +32,11 @@ public class Külastaja implements Comparable {
     }
 
     @Override
-    public int compareTo(Object temp) {
+    public int compareTo(Külastaja võrreldav) {
 
-        Külastaja other = (Külastaja) temp;
-
-        if(getAtraktsioonideArv() > other.getAtraktsioonideArv()) {
+        if(getAtraktsioonideArv() > võrreldav.getAtraktsioonideArv()) {
             return 1;
-        } else if (getAtraktsioonideArv() < other.getAtraktsioonideArv()) {
+        } else if (getAtraktsioonideArv() < võrreldav.getAtraktsioonideArv()) {
             return -1;
         } else {
             return 0;

@@ -1,9 +1,11 @@
+package Pank;
+
 public class Kuldklient extends Klient {
 
     private String kliendiHaldur;
 
     public Kuldklient(int isikukood, double saldo, double aktsiaPortfelliVäärtus, String kliendiHaldur) {
-        super(isikukood, saldo, aktsiaPortfelliVäärtus); // Klient konstruktori käivitamine
+        super(isikukood, saldo, aktsiaPortfelliVäärtus); // Pank.Klient konstruktori käivitamine
         this.kliendiHaldur = kliendiHaldur;
     }
 
