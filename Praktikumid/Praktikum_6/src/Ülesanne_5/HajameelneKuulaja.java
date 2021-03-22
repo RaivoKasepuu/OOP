@@ -15,6 +15,11 @@ public class HajameelneKuulaja extends RaadioKuulaja {
         super(raadioKuulaja);
     }
 
+    public HajameelneKuulaja() {
+        super();
+
+    }
+
     @Override
     public void kuula(String raadiosaade) {
         super.kuula(raadiosaade);

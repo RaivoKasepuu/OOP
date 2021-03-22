@@ -20,6 +20,10 @@ public class Raadiosaatja {
         this.raadiokuulajad = raadiokuulajad;
     }
 
+    public Raadiosaatja() {
+
+    }
+
 
     public void lisaKuulaja(RaadioKuulaja raadiokuulaja){
         raadiokuulajad.add(raadiokuulaja);

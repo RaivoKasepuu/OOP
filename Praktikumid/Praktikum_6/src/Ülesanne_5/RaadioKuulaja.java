@@ -17,6 +17,10 @@ private String raadioKuulaja;
         this.raadioKuulaja = raadioKuulaja;
     }
 
+    public RaadioKuulaja() {
+
+    }
+
     @Override
     public String toString() {
         return "RaadioKuulaja{ " + raadioKuulaja + " raadioSaated=" + raadioSaated +" }";
