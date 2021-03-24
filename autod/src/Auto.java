@@ -1,10 +1,19 @@
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Auto implements Serializable  {
     private String vin;
     private String mark;
     private String model;
+    private ArrayList works;
 
+    public ArrayList getWorks() {
+        return works;
+    }
+
+    public void setWorks(ArrayList works) {
+        this.works = works;
+    }
 
     @Override
     public String toString() {
@@ -44,6 +53,10 @@ public class Auto implements Serializable  {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public void addWork(String work) {
+
     }
 
 

@@ -1,0 +1,6 @@
+102100,2021-03-24,VIN1234567,Audi,A4,Kalmer Tennossaar,Tapa,klaasid toonida
+105749,2021-03-24,VIN1234567,Audi,A4,Kalmer Tennossaar,Tapa,klaasid toonida
+108085,2021-03-24,VIN1234567,Audi,A4,Kalmer Tennossaar,Tapa,klaasid toonida
+104842,2021-03-24,VIN1234567,Audi,A4,Kalmer Tennossaar,Tapa,klaasid toonida
+101103,2021-03-24,VIN1234567,Audi,A4,Kalmer Tennossaar,Tapa,klaasid toonida
+108930,2021-03-24,VIN1234567,Audi,A4,Kalmer Tennossaar,Tapa,klaasid toonida

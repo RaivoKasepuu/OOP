@@ -1,44 +1,44 @@
 package Ülesanne_6;
 
 public abstract class Telefon implements Comparable<Telefon> {
-    private String telefoniNumber;
-    private String telefoniHelin;
+    private String Number;
+    private String Helin;
 
     public Telefon(String telefoniNumber, String telefoniHelin) {
-        this.telefoniNumber = telefoniNumber;
-        this.telefoniHelin = telefoniHelin;
+        this.Number = telefoniNumber;
+        this.Helin = telefoniHelin;
     }
 
 
-    public String getTelefoniNumber() {
-        return telefoniNumber;
+    public String getNumber() {
+        return Number;
     }
 
-    public void setTelefoniNumber(String telefoniNumber) {
-        this.telefoniNumber = telefoniNumber;
+    public void setNumber(String number) {
+        this.Number = number;
     }
 
-    public String getTelefoniHelin() {
-        return telefoniHelin;
+    public String getHelin() {
+        return Helin;
     }
 
-    public void setTelefoniHelin(String telefoniHelin) {
-        this.telefoniHelin = telefoniHelin;
+    public void setHelin(String helin) {
+        this.Helin = helin;
     }
 
 
     @Override
     public String toString() {
         return "Telefon{" +
-                "telefoniNumber='" + telefoniNumber + '\'' +
-                ", telefoniHelin='" + telefoniHelin + '\'' +
+                "telefoniNumber='" + Number + '\'' +
+                ", telefoniHelin='" + Helin + '\'' +
                 '}';
     }
 
     abstract String tähtisInfo();
 
     String viimasedNumbrid(int n) {
-        String viimasedNumbrid = telefoniNumber.substring(telefoniNumber.length() - n, telefoniNumber.length());
+        String viimasedNumbrid = Number.substring(Number.length() - n, Number.length());
         return viimasedNumbrid;
     }
 

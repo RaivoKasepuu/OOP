@@ -11,6 +11,10 @@ public class ValiRaadiosaatja extends Raadiosaatja{
         super(raadiokuulajad);
     }
 
+    public ValiRaadiosaatja() {
+
+    }
+
     @Override
     public void edasta(String raadiosaade){
         for (RaadioKuulaja raadiokuulaja: super.getRaadiokuulajad()) {

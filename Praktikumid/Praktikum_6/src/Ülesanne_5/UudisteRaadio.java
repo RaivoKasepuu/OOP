@@ -20,6 +20,10 @@ public class UudisteRaadio extends Raadiosaatja{
         this.aktuaalsedUudised = aktuaalsedUudised;
     }
 
+    public UudisteRaadio() {
+
+    }
+
     void uuendaAktuaalsedUudised (ArrayList<String> uudised){
         aktuaalsedUudised.add(uudised.toString());
     }

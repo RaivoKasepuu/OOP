@@ -8,6 +8,14 @@ public class TestRaadio2 {
 
     Raadiosaatja rs = new Raadiosaatja();
 
+    LotoNumbriTeataja lotoTeataja = new LotoNumbriTeataja();
+
+    ValiRaadiosaatja res = new ValiRaadiosaatja();
+
+    UudisteRaadio reee = new UudisteRaadio();
+
+
+
 
 
 

@@ -14,6 +14,10 @@ public class LotoNumbriTeataja extends Raadiosaatja {
         super(raadiokuulajad);
     }
 
+    public LotoNumbriTeataja() {
+
+    }
+
     public void loosiJaEdasta(){
         StringBuilder lotonumbrid = new StringBuilder();
         for (int i = 0; i < 10; i++) {
