@@ -74,6 +74,10 @@ public class Actions {
         System.out.println(Main.tabel.prindiTabel());
     }
 
+    static void nextTest() {
+        System.out.println("Seda funktsionaalsust veel pole. Rühmatöö 2 tuleb ju varsti!");
+    }
+
 
 }
 
