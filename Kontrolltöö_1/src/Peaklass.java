@@ -42,7 +42,7 @@ public class Peaklass {
         System.out.println();
 
         System.out.println("Sorteerin jooke....");
-        // Sorteeritakse joogid vastavalt meetodis compareTo kirjeldatud järjekorrale
+        // Sorteeritakse joogid vastavalt liitrihinnale
         Collections.sort(joogid);
 
         // Trükime joogid letile peale sorteerimist
@@ -73,82 +73,29 @@ public class Peaklass {
         //esimest jooki.
 
         for (int i = 0; i < tellimused.length; i++) {
-            System.out.println("Tellimus " + i);
             // segame joogid
             Collections.shuffle(joogid);
 
-            // juhusliku jookide arvu genereerimine
+            // juhusliku jookide arvu genereerimine tellimusse
             int jooke = (int) Math.round(Math.random() * 4 + 1);
             System.out.println("jooke tellimuses: " + jooke);
 
             for (int j = 0; j < jooke; j++) {
                 tellimused[i].telliJook(joogid.get(j));
-                System.out.println("lisasin tellimusele: " + joogid.get(j));
             }
         }
         System.out.println();
         // Tellimuste info ja iga tellimuse jookide nimekiri väljastatakse ekraanile.
 
         for (int i = 0; i < tellimused.length; i++) {
-            System.out.println(tellimused[i].toString());
+            System.out.println("Tellimus nr." + (i + 1));
+            tellimus.tellimuseJookideArv();
+            tellimus.tellimuseJoogid();
+            System.out.println("_________________________________________");
+            System.out.println("Tellimuse maksumus: " + tellimused[i].tellimuseMaksumus()) ;
+            System.out.println();
+
+
         }
-
-/*
-        // Luuakse 4 klienti rahasummaga 100 (nimed mõtelge ise välja)
-        Klient klient1 = new Klient("Kairit", 260);
-        Klient klient2 = new Klient("Meelis", 60);
-        Klient klient3 = new Klient("Margus", 300);
-        Klient klient4 = new Klient("Angeelika", 500);
-
-
-        // Kõikidest klientidest tehakse Klient[]-tüüpi massiiv. (Massiivi võib ka enne klientide tegemist luua ja järjest täita.)
-        List<Klient> kliendid = new ArrayList<>();
-        kliendid.addAll(Arrays.asList(klient1, klient2, klient3, klient4));
-
-        // Luuakse 2 kullerit (nimed mõtelge ise välja)
-        Kuller kuller1 = new Kuller("Artjom");
-        Kuller kuller2 = new Kuller("Andrei");
-
-        // Luuakse 4 tellimust (2 ühe kulleriga ja 2 teise kulleriga)
-        Tellimus tellimus1 = new Tellimus(kuller1);
-        Tellimus tellimus2 = new Tellimus(kuller2);
-
-        // Kõikidest tellimustest tehakse Tellimus[]-tüüpi massiiv. (Massiivi võib ka enne tellimuste tegemist luua ja järjest täita.)
-        List<Tellimus> tellimused = new ArrayList<>();
-        tellimused.addAll(Arrays.asList(tellimus1, tellimus2));
-
-        // Iga tellimuse jaoks valitakse juhuslikult 3 toitu (võib eeldada, et failis on vähemalt 3 toitu).
-        // Selleks tuleb kasutada Collections.shuffle meetodit. Antud meetod võtab argumendiks listi ning järjestab selle suvalises
-        // järjekorras. Toitude list järjestada iga tellimuse jaoks uuesti ümber ning lisada tellimusse 3 esimest toitu.
-        for (Tellimus i : tellimused) {
-            Collections.shuffle(toidud);
-            for (int j = 0; j < 3; j++) {
-                i.lisaToit(toidud.get(j));
-            }
-        }
-
-        // Tellimuste info väljastatakse ekraanile
-        for (Tellimus i: tellimused) {
-            System.out.println(i.toString());
-        }
-
-        // Kliendid maksavad tellimuste eest ja hindavad kullereid (üks klient maksab ühe tellimuse eest ja hindab selle tellimuse toonud kullerit)
-        klient1.maksa(tellimus1);
-        klient1.hinda(tellimus1);
-
-        klient2.maksa(tellimus2);
-        klient2.hinda(tellimus2);
-
-        // Klientide info väljastatakse ekraanile
-        for (Klient i: kliendid) {
-            System.out.println(i.toString());
-        }
-
-        // Kullerite info väljastatakse ekraanile
-        System.out.println(kuller1.toString());
-        System.out.println(kuller2.toString());
-*/
-
     }
-
 }

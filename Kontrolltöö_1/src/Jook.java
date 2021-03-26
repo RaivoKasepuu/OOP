@@ -39,9 +39,9 @@ abstract class Jook implements Comparable<Jook> {
 
     @Override
     public int compareTo(Jook o) {
-        if (getHind() > o.getHind()) {
+        if (getHind()/getMaht() > o.getHind()/o.getMaht()) {  // vastavalt liitri hinnale
             return 1;
-        } else if (getHind() < o.getHind()) {
+        } else if (getHind()/getMaht() < o.getHind()/o.getMaht()) {
             return -1;
         } else {
             return 0;
