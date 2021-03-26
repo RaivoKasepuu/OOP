@@ -9,6 +9,7 @@ public class Tellimus {
     }
 
     public void telliJook(Jook jook) {
+        System.out.println(jook);
         joogidTellimuses.add(jook);
     }
 

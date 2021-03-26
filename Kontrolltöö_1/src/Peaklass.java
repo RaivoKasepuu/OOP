@@ -16,7 +16,7 @@ public class Peaklass {
                 String rida = sc.nextLine();
                 String[] tükid = rida.split(",");
                 if (tükid.length == 4) {
-                    list1.add(new Pudelijook(tükid[0], Double.parseDouble(tükid[1]), Integer.parseInt(tükid[2]),Integer.parseInt(tükid[3])));
+                    list1.add(new Pudelijook(tükid[0], Double.parseDouble(tükid[1]), Integer.parseInt(tükid[2]), Integer.parseInt(tükid[3])));
                 } else {
                     list1.add(new Vaadijook(tükid[0], Double.parseDouble(tükid[1]), Integer.parseInt(tükid[2])));
                 }
@@ -39,7 +39,7 @@ public class Peaklass {
         // Trükime joogid letile enne sorteerimist
 
         System.out.println("Joogid enne sorteerimist: ");
-        for (int i = 0; i <joogid.size(); i++){
+        for (int i = 0; i < joogid.size(); i++) {
             System.out.println(joogid.get(i));
         }
         System.out.println();
@@ -50,7 +50,7 @@ public class Peaklass {
 
         // Trükime joogid letile peale sorteerimist
         System.out.println("Joogid peale sorteerimist liitrihinna järgi: ");
-        for (int i = 0; i <joogid.size(); i++){
+        for (int i = 0; i < joogid.size(); i++) {
             System.out.println(joogid.get(i));
         }
         System.out.println();
@@ -68,7 +68,6 @@ public class Peaklass {
         Tellimus[] tellimused = {tellimus, tellimus2, tellimus3, tellimus4, tellimus5};
 
 
-
         // Iga tellimuse jaoks valitakse juhuslikult 1-4 jooki. Selleks tuleb kasutada Collections.shuffle meetodit.
         // Antud meetod võtab argumendiks
         //listi ning järjestab selle suvalises järjekorras. Jookide list järjestada iga tellimuse jaoks uuesti
@@ -80,10 +79,11 @@ public class Peaklass {
             Collections.shuffle(joogid);
 
             // juhusliku jookide arvu genereerimine tellimusse
-            int jooke = (int) (1 + (Math.random() * 4);
+            int jooke = (int) (1 + (Math.random() * 4));
             System.out.println("jooke" + jooke);
 
             for (int j = 0; j < jooke; j++) {
+                System.out.println(joogid.get(j));
                 tellimused[i].telliJook(joogid.get(j));
             }
         }
@@ -95,7 +95,7 @@ public class Peaklass {
             tellimus.tellimuseJookideArv();
             tellimus.tellimuseJoogid();
             System.out.println("_________________________________________");
-            System.out.println("Tellimuse maksumus: " + tellimused[i].tellimuseMaksumus()) ;
+            System.out.println("Tellimuse maksumus: " + tellimused[i].tellimuseMaksumus());
             System.out.println();
 
 
