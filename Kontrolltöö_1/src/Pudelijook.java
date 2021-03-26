@@ -22,9 +22,9 @@ public class Pudelijook extends Jook{
     @Override
     public String toString() {
         return "Pudelijook{" +
-                "nimetus='" + nimetus + '\'' +
-                ", hind=" + hind +
-                ", maht=" + maht +
+                "nimetus='" + super.getNimetus() + '\'' +
+                ", hind=" + super.getHind() +
+                ", maht=" + super.getMaht() +
                 ", pudeliteArv=" + pudeliteArv +
                 '}';
     }

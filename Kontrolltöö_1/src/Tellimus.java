@@ -3,42 +3,44 @@ import java.util.List;
 
 public class Tellimus {
 
-    private List<Jook> joogidTellimuses = new ArrayList<>();
+    private List<Jook> joogid = new ArrayList<>();
 
     public Tellimus() {
+        this.joogid = joogid;
     }
 
     public void telliJook(Jook jook) {
-        System.out.println(jook);
-        joogidTellimuses.add(jook);
+
+        joogid.add(jook);
+
     }
 
 
     public double tellimuseMaksumus() {
         double koguMaksumus = 0;
-        for (int i = 0; i < joogidTellimuses.size(); i++) {
-            koguMaksumus += joogidTellimuses.get(i).getHind();
+        for (int i = 0; i < joogid.size(); i++) {
+            koguMaksumus += joogid.get(i).getHind();
         }
         return koguMaksumus;
     }
 
     public void tellimuseJoogid() {
         System.out.println("Kõik tellimuse joogid:");
-        for (int i = 0; i < joogidTellimuses.size(); i++) {
-            System.out.println(joogidTellimuses.get(i).nimetus);
+        for (int i = 0; i < joogid.size(); i++) {
+            System.out.println(joogid.get(i).getNimetus());
         }
     }
 
     public void tellimuseJookideArv() {
-        System.out.println("Jooke: " + joogidTellimuses.size());
+        System.out.println("Jooke: " + joogid.size());
     }
 
 
     @Override
     public String toString() {
         return "Tellimus{" +
-                " tellimuse maksumus: " + tellimuseMaksumus() +
-                " jookide arv: " + joogidTellimuses.size() +
+                " tellimuse maksumus: " + tellimuseMaksumus() + "tugrikut" +
+                " jookide arv: " + joogid.size() + " tk" +
                 '}';
     }
 }

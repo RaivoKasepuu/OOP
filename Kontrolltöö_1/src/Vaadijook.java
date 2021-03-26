@@ -18,9 +18,9 @@ public class Vaadijook extends Jook{
     @Override
     public String toString() {
         return "Vaadijook{" +
-                "nimetus='" + nimetus + '\'' +
-                ", hind=" + hind +
-                ", maht=" + maht +
+                "nimetus='" + super.getNimetus() + '\'' +
+                ", hind=" + super.getHind() +
+                ", maht=" + super.getMaht() +
                 '}';
     }
 }

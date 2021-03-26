@@ -32,8 +32,8 @@ abstract class Jook implements Comparable<Jook> {
                 "nimetus='" + nimetus + '\'' +
                 ", hind=" + hind +
                 ", maht=" + maht +
-                ", liitri hind=" + maht +
-                ", tellimuse hind=" + maht +
+                ", liitri hind=" + liitriHind() +
+                ", tellimuse hind=" + tellimuseHind() +
                 '}';
     }
 
