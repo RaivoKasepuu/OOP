@@ -28,6 +28,9 @@ public class Peaklass {
 
     public static void main(String[] args) throws Exception {
 
+        System.out.println();
+        System.out.println(" Raivo Kasepuu, B710710 konmtreolltöö nr.1 ");
+        System.out.println();
 
         // Rakendatakse vastavat staatilist meetodit, et lugeda failist jookide andmed
         List<Jook> joogid = loeJoogid("joogid.txt");
@@ -46,7 +49,7 @@ public class Peaklass {
         Collections.sort(joogid);
 
         // Trükime joogid letile peale sorteerimist
-        System.out.println("Joogid peale sorteerimist: ");
+        System.out.println("Joogid peale sorteerimist liitrihinna järgi: ");
         for (int i = 0; i <joogid.size(); i++){
             System.out.println(joogid.get(i));
         }
@@ -77,8 +80,8 @@ public class Peaklass {
             Collections.shuffle(joogid);
 
             // juhusliku jookide arvu genereerimine tellimusse
-            int jooke = (int) Math.round(Math.random() * 4 + 1);
-            System.out.println("jooke tellimuses: " + jooke);
+            int jooke = (int) (1 + (Math.random() * 4);
+            System.out.println("jooke" + jooke);
 
             for (int j = 0; j < jooke; j++) {
                 tellimused[i].telliJook(joogid.get(j));
