@@ -1,0 +1,10 @@
+Kanasalat,5.00,10
+Shishi sushi,19.00
+Kartulivorm,6.50,15
+Pardikoib,11.50
+Ekleer,3.50
+Tassikook,2.85
+Pitsa,5.50,5
+Pasta,8.00
+Searibid,19.50,8
+Tunnikalasalat,5.90

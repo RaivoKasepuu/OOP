@@ -30,7 +30,6 @@ public class FailiTabel {
 
     }
 
-
     public boolean kustutaAuto(int reaNr) {
         System.out.println("Failitabel - kustutame Auto");
         try {

@@ -49,7 +49,6 @@ public class Main {
                     Actions.nextTest();
                     break;
                 }
-
                 case MENÜÜST_VÄLJA -> {
                     break loop;
                 }
