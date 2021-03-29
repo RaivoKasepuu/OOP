@@ -10,7 +10,7 @@ public class Pudelijook extends Jook{
 
     @Override
     double liitriHind() {
-        return 1000 * hind * maht;
+        return 1000 * hind / maht;
     }
 
     @Override

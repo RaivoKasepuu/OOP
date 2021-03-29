@@ -1,7 +1,4 @@
-import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -29,7 +26,7 @@ public class Peaklass {
     public static void main(String[] args) throws Exception {
 
         System.out.println();
-        System.out.println(" Raivo Kasepuu, B710710 konmtreolltöö nr.1 ");
+        System.out.println(" Raivo Kasepuu, B710710 kontrolltöö nr.1 ");
         System.out.println();
 
         // Rakendatakse vastavat staatilist meetodit, et lugeda failist jookide andmed
@@ -80,10 +77,9 @@ public class Peaklass {
 
             // juhusliku jookide arvu genereerimine tellimusse
             int jooke = (int) (1 + (Math.random() * 4));
-            System.out.println("jooke" + jooke);
+
 
             for (int j = 0; j < jooke; j++) {
-                System.out.println(joogid.get(j));
                 tellimused[i].telliJook(joogid.get(j));
             }
         }
@@ -92,8 +88,8 @@ public class Peaklass {
 
         for (int i = 0; i < tellimused.length; i++) {
             System.out.println("Tellimus nr." + (i + 1));
-            tellimus.tellimuseJookideArv();
-            tellimus.tellimuseJoogid();
+            tellimused[i].tellimuseJookideArv();
+            tellimused[i].tellimuseJoogid();
             System.out.println("_________________________________________");
             System.out.println("Tellimuse maksumus: " + tellimused[i].tellimuseMaksumus());
             System.out.println();
