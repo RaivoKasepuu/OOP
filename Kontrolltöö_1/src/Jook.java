@@ -1,8 +1,8 @@
 abstract class Jook implements Comparable<Jook> {
 
-    String nimetus;
-    double hind;
-    int maht;
+    private String nimetus;
+    private double hind;
+    private int maht;
 
     public Jook(String nimetus, double hind, int maht) {
         this.nimetus = nimetus;
@@ -39,9 +39,9 @@ abstract class Jook implements Comparable<Jook> {
 
     @Override
     public int compareTo(Jook o) {
-        if (getHind()/getMaht() > o.getHind()/o.getMaht()) {  // vastavalt liitri hinnale
+        if (liitriHind() > o.liitriHind()) {  // vastavalt liitri hinnale
             return 1;
-        } else if (getHind()/getMaht() < o.getHind()/o.getMaht()) {
+        } else if (liitriHind() < o.liitriHind()) {
             return -1;
         } else {
             return 0;

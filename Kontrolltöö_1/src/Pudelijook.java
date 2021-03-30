@@ -10,22 +10,21 @@ public class Pudelijook extends Jook{
 
     @Override
     double liitriHind() {
-        return 1000 * hind / maht;
+        return 1000 * getHind() / getMaht();
     }
 
     @Override
     double tellimuseHind() {
-        return hind * pudeliteArv;
+        return getHind() * pudeliteArv;
     }
 
 
     @Override
     public String toString() {
-        return "Pudelijook{" +
-                "nimetus='" + super.getNimetus() + '\'' +
-                ", hind=" + super.getHind() +
-                ", maht=" + super.getMaht() +
-                ", pudeliteArv=" + pudeliteArv +
-                '}';
+        return "Pudelijook: " +
+                super.getNimetus() +
+                ", hind " + super.getHind() + "€," +
+                ", maht " + super.getMaht() + "ml" +
+                ", pudelite arv=" + pudeliteArv;
     }
 }

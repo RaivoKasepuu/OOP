@@ -7,20 +7,19 @@ public class Vaadijook extends Jook{
 
     @Override
     double liitriHind() {
-        return 10 * hind;
+        return 10 * getHind();
     }
 
     @Override
     double tellimuseHind() {
-        return hind * maht / 100;
+        return getHind() * getMaht() / 100;
     }
 
     @Override
     public String toString() {
-        return "Vaadijook{" +
-                "nimetus='" + super.getNimetus() + '\'' +
-                ", hind=" + super.getHind() +
-                ", maht=" + super.getMaht() +
-                '}';
+        return "Vaadijook: " +
+                super.getNimetus() +
+                ", hind " + super.getHind() + "€," +
+                ", maht " + super.getMaht() + "ml";
     }
 }

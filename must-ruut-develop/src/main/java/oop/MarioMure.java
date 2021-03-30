@@ -1,0 +1,41 @@
+package oop;
+
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+
+public class MarioMure {
+
+
+
+    public void start(Stage peaLava) throws Exception {
+        Group juur = new Group();
+        Canvas lõuend = new Canvas(535.5,535.5);
+        GraphicsContext gc = lõuend.getGraphicsContext2D();
+        Rectangle rectangle = new Rectangle(50,50, 300,200);
+        juur.getChildren().add(rectangle);
+        Scene stseen1 = new Scene(juur, 530, 530, Color.SEASHELL);
+        peaLava.setScene(stseen1);
+        peaLava.setTitle("Must Ruut");
+        peaLava.show();
+
+
+        juur.getChildren().add(lõuend);
+
+
+
+        peaLava.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    private static void launch(String[] args) {
+    }
+
+}

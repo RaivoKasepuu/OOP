@@ -25,8 +25,9 @@ public class Peaklass {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println();
-        System.out.println(" Raivo Kasepuu, B710710 kontrolltöö nr.1 ");
+        System.out.println("==============================================");
+        System.out.println("|  Raivo Kasepuu, B710710, kontrolltöö nr.1  |");
+        System.out.println("==============================================");
         System.out.println();
 
         // Rakendatakse vastavat staatilist meetodit, et lugeda failist jookide andmed
@@ -42,11 +43,12 @@ public class Peaklass {
         System.out.println();
 
         System.out.println("Sorteerin jooke....");
-        // Sorteeritakse joogid vastavalt liitrihinnale
+        System.out.println();
+        // Sorteeritakse joogid vastavalt liitrihinna meetodile
         Collections.sort(joogid);
 
         // Trükime joogid letile peale sorteerimist
-        System.out.println("Joogid peale sorteerimist liitrihinna järgi: ");
+        System.out.println("Joogid peale sorteerimist liitrihinna meetodi järgi: ");
         for (int i = 0; i < joogid.size(); i++) {
             System.out.println(joogid.get(i));
         }
@@ -87,13 +89,14 @@ public class Peaklass {
         // Tellimuste info ja iga tellimuse jookide nimekiri väljastatakse ekraanile.
 
         for (int i = 0; i < tellimused.length; i++) {
+            System.out.println("______________________________________________");
             System.out.println("Tellimus nr." + (i + 1));
-            tellimused[i].tellimuseJookideArv();
             tellimused[i].tellimuseJoogid();
-            System.out.println("_________________________________________");
-            System.out.println("Tellimuse maksumus: " + tellimused[i].tellimuseMaksumus());
+            System.out.println("==============================================");
+            System.out.println(tellimused[i].toString());
+            System.out.println("==============================================");
             System.out.println();
-
+            System.out.println();
 
         }
     }
