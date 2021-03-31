@@ -25,6 +25,6 @@ public class Pudelijook extends Jook{
                 super.getNimetus() +
                 ", hind " + super.getHind() + "€," +
                 ", maht " + super.getMaht() + "ml" +
-                ", pudelite arv=" + pudeliteArv;
+                ", pudelite arv " + pudeliteArv;
     }
 }

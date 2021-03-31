@@ -19,7 +19,7 @@ public class Vaadijook extends Jook{
     public String toString() {
         return "Vaadijook: " +
                 super.getNimetus() +
-                ", hind " + super.getHind() + "€," +
+                ", hind " + super.getHind() + "€" +
                 ", maht " + super.getMaht() + "ml";
     }
 }
