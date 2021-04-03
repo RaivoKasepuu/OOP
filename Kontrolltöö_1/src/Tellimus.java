@@ -14,7 +14,7 @@ public class Tellimus {
         for (int i = 0; i < joogid.size(); i++) {
             koguMaksumus += joogid.get(i).getHind();
         }
-        return Math.round(koguMaksumus * 100) / 100;
+        return Math.round(koguMaksumus * 100.0) / 100.0;
     }
 
     public void tellimuseJoogid() {
