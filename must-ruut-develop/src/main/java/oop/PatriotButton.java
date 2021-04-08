@@ -18,40 +18,65 @@ import javafx.stage.Stage;
 public class PatriotButton extends Application {
 
     @Override
-    public void start(Stage peaLava) {
+    public void start(Stage primaryStage) {
 
         StackPane kalamBuur = new StackPane();
-        kalamBuur.setBackground(new Background(new BackgroundFill(Color.rgb(0,114,206), CornerRadii.EMPTY, Insets.EMPTY)));
+        kalamBuur.setBackground(new Background(new BackgroundFill(Color.rgb(0, 114, 206), CornerRadii.EMPTY, Insets.EMPTY)));
 
-        peaLava.setHeight(500.0);
-        peaLava.setMinHeight(100.0);
-        peaLava.setWidth(500.0);
-        peaLava.setMinWidth(200.0);
+        primaryStage.setHeight(500.0);
+        primaryStage.setMinHeight(100.0);
+        primaryStage.setWidth(500.0);
+        primaryStage.setMinWidth(200.0);
 
-        Scene stseen = new Scene(kalamBuur, peaLava.getWidth(), peaLava.getHeight(), Color.RED);
+        Scene scene = new Scene(kalamBuur, primaryStage.getWidth(), primaryStage.getHeight(), Color.rgb(0, 114, 206));
         Button patriotButton = new Button("PatriotButton");
-        stseen.widthProperty().addListener(new ChangeListener<Number>() {
+        patriotButton.setTextFill(Color.rgb(0, 114, 206));
+
+/*
+        scene.widthProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
                 patriotButton.setLayoutX(((double) newValue));
             }
         });
-        stseen.heightProperty().addListener(new ChangeListener<Number>() {
+        scene.heightProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
                 patriotButton.setLayoutY(((double) newValue));
             }
         });
+
+  */
+        kalamBuur.widthProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                //patriotButton.setLayoutX(((double) newValue));
+                patriotButton.setTranslateX(100);
+           }
+        });
+
+        kalamBuur.heightProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                //patriotButton.setLayoutY(((double) newValue));
+                patriotButton.setTranslateY(100);
+            }
+        });
+
+
         patriotButton.addEventHandler(MouseEvent.MOUSE_ENTERED, event -> {
-            patriotButton.setTranslateX(patriotButton.getLayoutY() - Math.random() * peaLava.getWidth() * 0.5);
-            patriotButton.setTranslateY(patriotButton.getLayoutY() - Math.random() * peaLava.getHeight() * 0.5);
+
+            patriotButton.setTranslateX(Math.random() * (kalamBuur.boundsInParentProperty().get().getMaxX() - patriotButton.boundsInParentProperty().get().getMaxX()));
+            patriotButton.setTranslateY(Math.random() * (kalamBuur.boundsInParentProperty().get().getMaxY() - patriotButton.boundsInParentProperty().get().getMaxY()));
+
         });
 
         kalamBuur.getChildren().add(patriotButton);
-        peaLava.setScene(stseen);
-        peaLava.setTitle("PatriotButtonEscape");
-        peaLava.show();
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("PatriotButtonEscape");
+        primaryStage.show();
     }
+
 
     public static void main(String[] args) {
         launch(args);

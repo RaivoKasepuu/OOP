@@ -23,12 +23,12 @@ public class PatriotQuestion extends Application {
 
         BorderPane borderPane = new BorderPane();
         borderPane.setBackground((new Background(new BackgroundFill(Color.rgb(0,114,206), CornerRadii.EMPTY, Insets.EMPTY))));
-        Label küsimus = new Label("Eestlase test. Mille süütad Jõuluõhtul?");
-        küsimus.setFont(new Font(15));
+        Label question = new Label("Eestlase test. Mille süütad Jõuluõhtul?");
+        question.setFont(new Font(15));
         CheckBox option1 = new CheckBox("Küünla");
         CheckBox option2 = new CheckBox("Oleviste kiriku");
         CheckBox option3 = new CheckBox("Naabri sauna");
-        VBox vbox = new VBox(8, küsimus, option1, option2, option3);
+        VBox vbox = new VBox(8, question, option1, option2, option3);
         Button answerButton = new Button("Vasta!");
 
         answerButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
