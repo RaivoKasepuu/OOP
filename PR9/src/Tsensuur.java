@@ -10,17 +10,15 @@ public class Tsensuur {
         for (String i : args) {
             tabuList.add(i.replaceAll("[^A-Za-z0-9]", ""));
         }
-        /*
-        for (int i = 0; i < tabuList.size(); i++) {
-            System.out.println(tabuList.get(i));
-        }
-        */
+
+
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in, "UTF-8"))) {
             String row = bufferedReader.readLine();
+
             while (row != null) {
                 String[] stringList = row.split(" ");
                 for (String str : stringList) {
-                    if (str.equals(" ")) {
+                    if (str.equals("")) {
                         System.exit(1);
                     }
 
