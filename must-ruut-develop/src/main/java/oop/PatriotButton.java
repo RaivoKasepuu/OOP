@@ -31,6 +31,10 @@ public class PatriotButton extends Application {
         patriotButton.setLayoutX(ButtonX());
         patriotButton.setLayoutY(ButtonY());
 
+        primaryStage.addEventHandler(MouseEvent.ANY, action -> {
+            patriotButton.setVisible(true);
+        });
+
         patriotButton.addEventHandler(MouseEvent.ANY, event -> {
             patriotButton.setLayoutX(ButtonX());
             patriotButton.setLayoutY(ButtonY());
@@ -50,12 +54,12 @@ public class PatriotButton extends Application {
     }
 
     public double ButtonX() {
-        return Math.random() * (kalamBuur.boundsInParentProperty().get().getMaxX() * 0.7);
-      }
+        return Math.random() * (kalamBuur.boundsInParentProperty().get().getMaxX() * 0.65);
+    }
 
     public double ButtonY() {
-        return Math.random() * (kalamBuur.boundsInParentProperty().get().getMaxY() * 0.7);
-       }
+        return Math.random() * (kalamBuur.boundsInParentProperty().get().getMaxY() * 0.65);
+    }
 
     public static void main(String[] args) {
         launch(args);
