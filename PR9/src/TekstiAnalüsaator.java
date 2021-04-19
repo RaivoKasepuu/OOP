@@ -16,7 +16,7 @@ public class TekstiAnalüsaator {
             String row = bufferedReader.readLine();
             Integer testStringLength = testString.length();
             while (row != null) {
-                for (int i = 0; i < row.length() - testStringLength; i++) {
+                for (int i = 0; i < row.length() - testStringLength + 1; i++) {
                     if (testString.equalsIgnoreCase(row.substring(i, i + testStringLength))) {
                         wordCount += 1;
                     }
@@ -24,6 +24,7 @@ public class TekstiAnalüsaator {
                 row = bufferedReader.readLine();
             }
         }
+
         return wordCount;
     }
 }

@@ -21,10 +21,16 @@ public class Peaklass {
         System.out.println();
 
 
+        TekstiAnalüsaator testtekst1 = new TekstiAnalüsaator("testtekst_kala.txt");
+        System.out.println("Sõne 'kala' esineb testtekstis: " + testtekst1.sõneEsinemisteArv("kala") + " korda.");
+        TekstiAnalüsaator testtekst2 = new TekstiAnalüsaator("testtekst_lala.txt");
+        System.out.println("Sõne 'lala' esineb testtekstis: " + testtekst2.sõneEsinemisteArv("lala") + " korda.");
+        TekstiAnalüsaator testtekst3 = new TekstiAnalüsaator("testtekst_efg.txt");
+        System.out.println("Sõne 'efg' esineb testtekstis: " + testtekst3.sõneEsinemisteArv("efg") + " korda.");
         TekstiAnalüsaator testtekst = new TekstiAnalüsaator("testtekst.txt");
-        System.out.println("Analüüsime testteksti. Uurime, mitu korda on selles sõne 'kes'. ");
         System.out.println("Sõne 'kes' esineb testtekstis: " + testtekst.sõneEsinemisteArv("kes") + " korda.");
         System.out.println();
+
 
         Mp3Analüsaator acdc = new Mp3Analüsaator("AC_DC_Highway_to_Hell.mp3");
         System.out.println(acdc.onKantri());
@@ -32,5 +38,8 @@ public class Peaklass {
 
         Mp3Analüsaator downInTennessee = new Mp3Analüsaator("John_Anderson_Down_in_Tennessee.mp3");
         System.out.println(downInTennessee.onKantri());
+
+
     }
+
 }
