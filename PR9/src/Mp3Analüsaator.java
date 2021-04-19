@@ -20,6 +20,4 @@ public class Mp3Analüsaator {
             return false;
         }
     }
-
-
 }
