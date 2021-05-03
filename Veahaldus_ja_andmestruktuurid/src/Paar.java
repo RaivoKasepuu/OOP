@@ -1,27 +1,27 @@
-public class Paar<T,K> {
+public class Paar<A,B> {
 
-    private T first;
-    private K second;
+    private A first;
+    private B second;
 
-    public Paar (T first, K second) {
+    public Paar (A first, B second) {
         this.first = first;
         this.second = second;
 
     }
 
-    public T getEsimene() {
+    public A getEsimene() {
         return first;
     }
 
-    public void setEsimene(T first) {
+    public void setEsimene(A first) {
         this.first = first;
     }
 
-    public K getTeine() {
+    public B getTeine() {
         return second;
     }
 
-    public void setTeine(K second) {
+    public void setTeine(B second) {
         this.second = second;
     }
 
@@ -32,6 +32,6 @@ public class Paar<T,K> {
 
     public static void main(String[] args) {
         Paar<String , Integer> paar1 = new Paar<String, Integer>("Nimi", 2011);
-        Paar<String , String> paar2 = new Paar<String, String>("Nimi", "Nimi2");
+        Paar<String , String> paar2 = new Paar<String, String>("Nimi", "Nimi999");
     }
 }
