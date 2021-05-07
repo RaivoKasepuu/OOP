@@ -78,7 +78,9 @@ public class ÜlevaatusePunkt {
                 }
             }
             if (vastus.equals("V")){
-                System.out.println("On olemas järgmiste omanike autod: " + omanikudAutod.keySet());
+                System.out.println("Oled vaadelnud järgmisi linde:");
+
+
                 System.out.println("Sisesta omaniku nimi: ");
                 String omanik = sc.nextLine();
                 if(omanikudAutod.containsKey(omanik)){

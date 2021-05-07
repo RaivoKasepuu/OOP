@@ -1,0 +1,8 @@
+metsvint,pruun,N,0
+rasvatihane,sinine ja kollane,M,0
+jäälind,sinine,M,1
+merikotkas,pruun,N,1
+leevike,punane ja hall,M,0
+rasvatihane,sinine ja kollane,M,0
+vares,hall,T,0
+vares,hall,M,0
